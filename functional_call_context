@@ -1,0 +1,11 @@
+<?php
+    error_reporting(E_ALL);
+    $context = function(){
+
+        echo $this -> prop;
+
+    };
+
+    class newObj { public $prop = "hello world"; }
+
+    $context -> call( new newObj );
