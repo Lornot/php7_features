@@ -2,7 +2,17 @@
 
     error_reporting(E_ALL);
 
-    $framework = new class( "read only param" ) {
+    class myOBJ {
+
+        public $hello = "say hello";
+
+    }
+
+    interface req {
+        function print();
+    }
+
+    $framework = new class( "read only param" ) extends myOBJ implements req {
 
         function __construct( $ro ){
             $this -> readOnly = $ro;
@@ -16,5 +26,7 @@
     };
 
     $framework -> print();
+
+    echo $framework -> hello;
 
     $framework::hello();
