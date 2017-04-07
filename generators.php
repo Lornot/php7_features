@@ -1,20 +1,5 @@
 <?php
 
-    function generate(){
-
-        echo 'Start the car.';
-        yield '<br/> First Stop.';
-        echo '<br/> Continue driving.';
-        echo '<br/> Take a left.';
-        yield '<br/> Stop at second stop sign';
-        echo '<br/> Desctination reached';
-        yield 'Your journey has take '. 20 . 'minutes';
-
-    }
-
-    //$generator = generate();
-
-
     function satNav() {
 
         $distance = 0;
